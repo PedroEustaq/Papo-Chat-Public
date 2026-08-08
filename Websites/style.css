@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 8px 8px;
+    height: 98dvh;
+    overflow-y: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    background-color: rgb(49, 255, 111);
+    border-radius: 10px;
+
+}
+
+.nav-btn {
+    margin: 10px;
+    padding: 15px 40px;
+    min-width: 200px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #2f32e99e;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex: 1;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+
+}
+
+.logo {
+    width: 90%;
+    transform: translateX(10px);
+    max-width: 400px;
+
+    animation-name: SurgirPapoLogo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state:running;
+}
+
+.ConteinerBTN {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 255, 255, 0);
+    max-width: 500px;
+    width: 90%;
+    min-width: 350px;
+
+    animation-name: EspandirEesticar;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state:running;
+}
+
+.ConteinerBTN>img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(100%);
+    background-color: aliceblue;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.105);
+}
+.secaoBotoes {
+    background-color: #0057b300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+
+    animation-name: SubirBtns;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state:running;
+}
+.comoBaixar {
+    display: none;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+}
+.comoBaixar > h1 {
+    background-color: white;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    font-weight: 200;
+    border-radius: 10px;
+    max-width: 500px;
+    min-width: 400px;
+    line-height: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.248);
+}
+.comoBaixar > h1 > span {
+    font-weight: 900;
+    font-size: 1.30rem;
+    padding: 5px 15px;
+    display: flex;
+    max-width: 130px;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(to right, #000000, #424242);
+    background-clip: text;
+    color: transparent;
+
+    border: solid rgba(0, 0, 0, 0.248) 1px;
+    border-radius: 90px;
+    margin-bottom: 20px;
+}
+.comoBaixar > h1 >  span > img {
+    width: 25px;
+    height: 25px;
+    margin-left: 0px;
+}
+#comoBaixar:target ~ .secaoBotoes {
+    display: none;
+    background-color: #0056b3;
+}
+#comoBaixar:target {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@keyframes SurgirPapoLogo {
+    0%{
+        opacity: 0;
+        scale: 1;
+        transform: translateY(-200px);
+    }
+    70% {
+        scale: 1;
+    }
+    80% {
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes EspandirEesticar {
+    0%{
+        transform: translateY(200px);
+        margin-bottom: 60px;
+    }
+    70% {
+        scale: 1;
+    }
+    80% {
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes SubirBtns {
+    0%{
+        opacity: 0;
+    }
+    80% {
+       
+        opacity: 0.9;
+    }
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+}

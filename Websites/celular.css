@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .comoBaixar>h1 {
+        min-width: 110%;
+        white-space: nowrap;
+        max-width: 500px;
+    }
+
+    .comoBaixar>h1>span {
+        margin-bottom: 0px;
+    }
+}
